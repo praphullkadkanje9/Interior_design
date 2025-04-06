@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gajashwa Interiors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        body {
+            background: #fff;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            animation: fadeInDown 1s;
+        }
+        header p {
+            font-size: 1.4rem;
+            animation: fadeInUp 1s;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: linear-gradient(to right, #f6d365, #fda085);
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services, .projects, .contact {
+            background: linear-gradient(to right, #ffffff, #ffe0e0);
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .services h2, .projects h2, .contact h2, .about h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #d6336c;
+            animation: fadeInUp 1s;
+        }
+        .services ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            list-style: none;
+            animation: fadeIn 1.5s;
+        }
+        .services li {
+            background: #fff0f6;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            color: #b03060;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background 0.3s;
+        }
+        .services li:hover {
+            transform: translateY(-5px);
+            background: #ffdeeb;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .projects img {
+            width: 100%;
+            border-radius: 0.5rem;
+            transition: transform 0.3s;
+        }
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            animation: fadeInUp 1s;
+        }
+        form button {
+            padding: 1rem 2rem;
+            background: linear-gradient(to right, #f77062, #fe5196);
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">Gajashwa Interiors</h1>
+        <p class="animate__animated animate__fadeInUp">Creative Spaces, Beautiful Places</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are Gajashwa Interiors – a passionate team of designers who transform your vision into stylish, functional living spaces. Our focus is on elegance, comfort, and lasting impressions.</p>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Residential Interiors</li>
+            <li>Commercial Spaces</li>
+            <li>Modular Kitchens</li>
+            <li>False Ceiling Designs</li>
+            <li>Lighting & Decor</li>
+            <li>Turnkey Projects</li>
+        </ul>
+    </section>
+
+    <section class="projects" id="projects">
+    <h2>Our Projects</h2>
+    <div class="projects-grid">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Interior Project 1">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Interior Project 2">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Interior Project 3">
+    </div>
+</section>
+
+
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 Gajashwa Interiors. All Rights Reserved.</p>
+    <p>Contact Us: <a href="mailto:your-email@gmail.com">your-email@gmail.com</a> | Phone: Your Phone Number</p>
+    </footer>
+
+
+</body>
+</html>
